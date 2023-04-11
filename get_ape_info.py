@@ -45,7 +45,7 @@ def get_ape_info(apeID):
 	api_url = f"https://c2emjgrvmi7cabd41mpg.bdnodes.net?auth={token}"
 	provider = HTTPProvider(api_url)
 	web3 = Web3(provider)
-
+	# Get info
 	contract = web3.eth.contract(address=contract_address,abi=abi)
 	owner = contract.functions.ownerOf(apeID).call()
 	image = contract.functions.tokenURI(apeID).call()
