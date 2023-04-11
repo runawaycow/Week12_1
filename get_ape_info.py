@@ -47,7 +47,6 @@ def get_ape_info(apeID):
 	web3 = Web3(provider)
 
 	contract = web3.eth.contract(address=contract_address,abi=abi)
-
     # Call the contract function to get the owner of the ape
     owner = contract.functions.ownerOf(apeID).call()
     # Call the contract function to get the image URL of the ape
