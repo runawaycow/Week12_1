@@ -50,10 +50,8 @@ def get_ape_info(apeID):
 
     # Call the contract function to get the owner of the ape
     owner = contract.functions.ownerOf(apeID).call()
-
     # Call the contract function to get the image URL of the ape
     image = contract.functions.tokenURI(apeID).call()
-
     # Call the contract function to get the eye color of the ape
     eyes = contract.functions.getApeDetails(apeID).call()[3]
 
