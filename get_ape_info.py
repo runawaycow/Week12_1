@@ -51,11 +51,11 @@ def get_ape_info(apeID):
 	image = contract.functions.tokenURI(apeID).call()
 	eyes = contract.functions.getApeDetails(apeID).call()[3]
 
-    # Fill the data dictionary with the results
-    data['owner'] = owner
-    data['image'] = image
-    data['eyes'] = eyes
-
+	# Fill the data dictionary with the results
+	data['owner'] = owner
+	data['image'] = image
+	data['eyes'] = eyes
+	
 	assert isinstance(data,dict), f'get_ape_info{apeID} should return a dict' 
 	assert all( [a in data.keys() for a in ['owner','image','eyes']] ), f"return value should include the keys 'owner','image' and 'eyes'"
 	return data
