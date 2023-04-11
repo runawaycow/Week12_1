@@ -48,7 +48,7 @@ def get_ape_info(apeID):
 
 	contract = web3.eth.contract(address=contract_address,abi=abi)
 	owner = contract.functions.ownerOf(apeID).call()
- 	image = contract.functions.tokenURI(apeID).call()
+	image = contract.functions.tokenURI(apeID).call()
 	eyes = contract.functions.getApeDetails(apeID).call()[3]
 
     # Fill the data dictionary with the results
