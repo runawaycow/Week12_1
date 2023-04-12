@@ -17,7 +17,7 @@ with open('/home/codio/workspace/abi.json', 'r') as f:
 
 ############################
 #Connect to an Ethereum node
-api_url = 'ipfs://QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/1E'
+api_url = 'https://ipfs.infura.io:5001/api/v0/cat?arg=QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/1'
 provider = HTTPProvider(api_url)
 web3 = Web3(provider)
 
@@ -37,12 +37,12 @@ def get_ape_info(apeID):
 		print( f"Failed to get {contract_address} from {ABI_ENDPOINT}" )
 		print( e )
 
-	bayc_address = "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"
+	#bayc_address = "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"
 	
 	############################
 	#Connect to an Ethereum node
-	token = "Mwb3juVAfI1g2RmA1JCGdYk-2_BmFrnLOtbomP1oDa4"
-	api_url = f"https://c2emjgrvmi7cabd41mpg.bdnodes.net?auth={token}"
+	#token = "Mwb3juVAfI1g2RmA1JCGdYk-2_BmFrnLOtbomP1oDa4"
+	#api_url = f"https://c2emjgrvmi7cabd41mpg.bdnodes.net?auth={token}"
 	provider = HTTPProvider(api_url)
 	web3 = Web3(provider)
 	# Get info
