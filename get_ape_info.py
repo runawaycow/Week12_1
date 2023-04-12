@@ -17,9 +17,9 @@ with open('/home/codio/workspace/abi.json', 'r') as f:
 
 ############################
 #Connect to an Ethereum node
-api_url = 'https://mainnet.infura.io/v3/2797c708e8cf48759187bed1586095f9'
-token = "bK6EFfS6xhezrHxkgku3Ctjg39Mkk7gf4WidgZb5Loy6a_XWNf7xrG-u7Yjlb9g1"
-api_url = f"emerald-adjacent-hippopotamus-973.mypinata.cloude/ipfs/{token}"
+api_url = 'ps://gateway.pinata.cloud/ipfs/bafybeifx7yeb55armcsxwwitkymga5xf53dxiarykms3ygqic223w5sk3m'
+#token = "bK6EFfS6xhezrHxkgku3Ctjg39Mkk7gf4WidgZb5Loy6a_XWNf7xrG-u7Yjlb9g1"
+#api_url = f"emerald-adjacent-hippopotamus-973.mypinata.cloude/ipfs/{token}"
 provider = HTTPProvider(api_url)
 web3 = Web3(provider)
 
