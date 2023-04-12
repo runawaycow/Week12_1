@@ -18,6 +18,8 @@ with open('/home/codio/workspace/abi.json', 'r') as f:
 ############################
 #Connect to an Ethereum node
 api_url = 'https://mainnet.infura.io/v3/2797c708e8cf48759187bed1586095f9'
+token = "Mwb3juVAfI1g2RmA1JCGdYk-2_BmFrnLOtbomP1oDa4"
+api_url = f"https://c2emjgrvmi7cabd41mpg.bdnodes.net?auth={token}"
 provider = HTTPProvider(api_url)
 web3 = Web3(provider)
 
@@ -42,7 +44,7 @@ def get_ape_info(apeID):
 	############################
 	#Connect to an Ethereum node
 	#token = "Mwb3juVAfI1g2RmA1JCGdYk-2_BmFrnLOtbomP1oDa4"
-	#api_url = f"https://c2emjgrvmi7cabd41mpg.bdnodes.net?auth={token}"
+	#api_url = f"https://c2emjgrvmi7cabd41mpg.bdnodes.net?eauth={token}"
 	#provider = HTTPProvider(api_url)
 	#web3 = Web3(provider)
 	# Get info
