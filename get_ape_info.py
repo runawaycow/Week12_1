@@ -17,7 +17,7 @@ with open('/home/codio/workspace/abi.json', 'r') as f:
 
 ############################
 #Connect to an Ethereum node
-api_url = 'ipfs://QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/1'
+api_url = 'https://mainnet.infura.io/v3/2797c708e8cf48759187bed1586095f9'
 provider = HTTPProvider(api_url)
 web3 = Web3(provider)
 
@@ -29,9 +29,9 @@ def get_ape_info(apeID):
 
 	############################
 	#Get Contract ABI from etherscan
-	#ABI_ENDPOINT = 'https://api.etherscan.io/api?module=contract&action=getabi&address='
+	#ABI_ENDPOINT = 'https://api.etherscan.io/api?module=contract&action=getabi&address=0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D'
 	#try:
-	#	response = requests.get( f"{ABI_ENDPOINT}{contract_address}", timeout = 20 )	
+	#	response = requests.get( f"{ABI_ENDPOINT}", timeout = 20 )	
 	#	abi = response.json()
 	#except Exception as e:
 	#	print( f"Failed to get {contract_address} from {ABI_ENDPOINT}" )
