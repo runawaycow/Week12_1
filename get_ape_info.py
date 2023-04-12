@@ -29,13 +29,13 @@ def get_ape_info(apeID):
 
 	############################
 	#Get Contract ABI from etherscan
-	ABI_ENDPOINT = 'https://api.etherscan.io/api?module=contract&action=getabi&address='
-	try:
-		response = requests.get( f"{ABI_ENDPOINT}{contract_address}", timeout = 20 )	
-		abi = response.json()
-	except Exception as e:
-		print( f"Failed to get {contract_address} from {ABI_ENDPOINT}" )
-		print( e )
+	#ABI_ENDPOINT = 'https://api.etherscan.io/api?module=contract&action=getabi&address='
+	#try:
+	#	response = requests.get( f"{ABI_ENDPOINT}{contract_address}", timeout = 20 )	
+	#	abi = response.json()
+	#except Exception as e:
+	#	print( f"Failed to get {contract_address} from {ABI_ENDPOINT}" )
+	#	print( e )
 
 	#bayc_address = "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"
 	
